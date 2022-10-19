@@ -28,10 +28,5 @@ if __name__ == '__main__':
     #This handles Twitter authetification and the connection to Twitter Streaming API
     stream = StdOutListener('consumer_key', 'consumer_secret', 'access_token', 'access_token_secret')
 
-while True:
-	try:
-		
-		#This line filter Twitter Streams to capture data by the keywords: 'python', 'javascript', 'ruby', '#bigdata'
-		stream.filter(track=['GUDA', 'Akuffo Addo', 'kirani ayat'])
-	except: 
-		continue
+    #This line filter Twitter Streams to capture data by the keywords: 'python', 'javascript', 'ruby', '#bigdata'
+    stream.filter(track=['GUDA', 'Akuffo Addo', 'kirani ayat'])
